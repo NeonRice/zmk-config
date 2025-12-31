@@ -54,10 +54,10 @@
 
         nav {
             bindings = <
-&trans  &kp TAB    &trans     &kp DEL     &kp LEFT       &kp C_VOLUME_UP                                    &kp C_RESET  &kp DEL    &kp UP     &kp END    &kp DEL   &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT    &kp LGUI       &kp C_VOLUME_DOWN                                  &caps_word   &kp LEFT   &kp DOWN   &kp RIGHT  &kp BSPC  &trans
-&trans  &kp SPACE  &kp LEFT   &kp K_BACK  &kp K_FORWARD  &kp C_PLAY_PAUSE   &trans  &trans  &trans  &trans  &trans       &kp PG_DN  &kp PG_UP  &trans     &kp RET   &trans
-                              &trans      &trans         &trans             &trans  &trans  &trans  &trans  &trans       &trans     &trans
+&trans  &kp TAB       &kp LG(TAB)    &kp LC(LS(TAB))  &kp LC(TAB)    &kp C_VOLUME_UP                                    &kp C_RESET  &kp C_AC_HOME  &kp UP     &kp END        &kp DEL   &trans
+&trans  &kp LSHFT     &kp LCTRL      &kp LALT         &kp LGUI       &kp C_VOLUME_DOWN                                  &caps_word   &kp LEFT       &kp DOWN   &kp RIGHT      &kp BSPC  &trans
+&trans  &kp LC(LEFT)  &kp LC(RIGHT)  &kp K_BACK       &kp K_FORWARD  &kp C_PLAY_PAUSE   &trans  &trans  &trans  &trans  &trans       &kp PG_DN      &kp PG_UP  &kp LC(SPACE)  &kp RET   &trans
+                                     &trans           &trans         &trans             &trans  &trans  &trans  &trans  &trans       &trans         &trans
             >;
 
             label = "Navigation Layer";
