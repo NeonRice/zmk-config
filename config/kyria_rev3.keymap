@@ -46,7 +46,7 @@
 &kp ESC    &kp Q  &kp W  &kp E     &kp R    &kp T                                                   &kp Y  &kp U     &kp I      &kp O    &kp P     &kp BSLH
 &kp TAB    &kp A  &kp S  &kp D     &kp F    &kp G                                                   &kp H  &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V    &kp B  &kp LSHFT       &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp N  &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                         &kp LGUI  &kp DEL  &mo 2  &kp LEFT_SHIFT  &kp ESC    &kp RET    &kp SPACE  &mo 1  &kp BSPC  &kp RALT
+                         &kp LGUI  &kp DEL  &mo 2  &kp LEFT_SHIFT  &kp ESC    &kp RET    &kp SPACE  &mo 2  &kp BSPC  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -55,10 +55,10 @@
         sym {
             display-name = "Symbol Layer";
             bindings = <
-&none  &kp ESC    &kp LBKT      &kp LBRC   &kp LPAR   &kp TILDE                                    &kp CARET  &kp RPAR   &kp RBRC       &kp RBKT      &kp GRAVE  &none
-&none  &kp MINUS  &kp ASTERISK  &kp EQUAL  &kp UNDER  &kp DOLLAR                                   &kp HASH   &sk LCTRL  &sk RALT       &sk RCTRL     &sk RSHFT  &none
-&none  &kp PLUS   &kp PIPE      &kp AT     &kp FSLH   &kp PERCENT  &trans  &trans  &trans  &trans  &none      &kp BSLH   &kp AMPERSAND  &kp QUESTION  &kp EXCL   &none
-                                &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&none  &kp ESC    &kp LBKT      &kp LBRC   &kp LPAR   &kp TILDE                                    &kp CARET  &kp RPAR  &kp RBRC       &kp RBKT      &kp GRAVE  &none
+&none  &kp MINUS  &kp ASTERISK  &kp EQUAL  &kp UNDER  &kp DOLLAR                                   &kp HASH   &sk RGUI  &sk RALT       &sk RCTRL     &sk RSHFT  &none
+&none  &kp PLUS   &kp PIPE      &kp AT     &kp FSLH   &kp PERCENT  &trans  &trans  &trans  &trans  &none      &kp BSLH  &kp AMPERSAND  &kp QUESTION  &kp EXCL   &none
+                                &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans     &trans    &trans
             >;
 
             sensor-bindings =
@@ -93,7 +93,7 @@
         compatible = "zmk,conditional-layers";
 
         ACTIVATE_NUM_LAYER {
-            if-layers = <1 2>;
+            if-layers = <2 2>;
             then-layer = <3>;
         };
     };
